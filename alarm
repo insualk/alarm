@@ -1,0 +1,8 @@
+#!/bin/bash
+if [ "$#" -ne 1 ]; then
+    min=1
+else
+    min=$1
+fi
+sec=$(expr $min \* 60)
+sleep $sec && say "Times up. It's been $min minutes."
